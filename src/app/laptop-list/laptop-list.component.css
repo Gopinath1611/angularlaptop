@@ -1,0 +1,54 @@
+
+       tr,thead,td {
+        margin:auto;
+        color: black;
+        text-align: center;
+        font-family: verdana;
+font-size: 15px;
+    }
+    tr:nth-child(even) {
+        background-color: whitesmoke;
+    }
+    
+    
+        table {
+            margin: auto;
+            text-align: center;
+        }
+       
+    #view{
+    background-color: rgb(140, 140, 247);
+    width: auto;
+    height: auto;
+    border: 1px solid black;
+    animation: mymove 1s infinite;
+  }
+  
+  @keyframes mymove {
+    50% {border-radius: 15px;}
+    
+}
+#update{
+    background-color: limegreen;
+    width: auto;
+    height: auto;
+    border: 1px solid black;
+    animation: mymove 1s infinite;
+  }
+  
+  @keyframes mymove {
+    50% {border-radius: 15px;}
+}
+#delete{
+    background-color: red;
+  width: auto;
+  height: auto;
+  border: 1px solid black;
+  animation: mymove 1s infinite;
+}
+
+@keyframes mymove {
+  50% {border-radius: 15px;}
+ 
+    
+}

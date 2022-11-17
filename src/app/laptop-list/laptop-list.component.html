@@ -1,0 +1,32 @@
+
+<div>
+    <h3>  LaptopList</h3>
+    
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <td>Id</td>
+            <td>Brand</td>
+            <td>Price</td>
+            <td>Ram</td>
+            <td>Colour</td>
+            <td>Actions</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let laptop of laptop">
+            <td> {{ laptop.id}}</td>
+            <td> {{ laptop.brand}}</td>
+            <td> {{ laptop.price}}</td>
+            <td> {{ laptop.ram}}</td>
+            <td> {{ laptop.colour}}</td>
+            <td>
+                <button (click)="delete(laptop.id)" id="delete"> Delete</button>
+               <button (click)="details(laptop.id)" id="view"> View</button> 
+               <button (click)="update(laptop.id)" id="update"> Update</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
